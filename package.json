@@ -1,12 +1,12 @@
 {
-  "name": "paras-subgraph",
+  "name": "spacegem-subgraph",
   "version": "0.1.0",
-  "repository": "https://github.com/VitalPointAI/subgraph-parasv2.git",
+  "repository": "https://github.com/VitalPointAI/subgraph-spacegem.git",
   "license": "MIT",
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
-    "deploy": "graph deploy aluhning/parasv3 --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/"
+    "deploy": "graph deploy aluhning/space-gem --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/"
   },
   "devDependencies": {
     "@graphprotocol/graph-cli": "0.26.0",

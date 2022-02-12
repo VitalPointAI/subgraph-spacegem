@@ -1,32 +1,23 @@
 specVersion: 0.0.4
-description: Paras V2
-repository: https://github.com/VitalPointAI/subgraph-parasv2.git
+description: Space Gem
+repository: https://github.com/VitalPointAI/subgraph-spacegem.git
 schema:
   file: schema.graphql
 features:
   - ipfsOnEthereumContracts
   - fullTextSearch
-  - grafting
 dataSources:
   - kind: near
     name: receipts
-    network: near-mainnet
+    network: near-testnet
     source:
-      account: x.paras.near
-      startBlock: 46959101
+      account: nft.vitalpointai.testnet
+      startBlock: 82319421
     mapping:
       apiVersion: 0.0.5
       language: wasm/assemblyscript
       file: receipts/receipts.wasm
       entities:
         - NftMint
-        - NftCreateSerie
-        - Royalty
-        - NftBuy
-        - NftSetSeriesPrice
-        - NftOnApprove
-        - NftTransferPayout
-        - NftDecreaseSeriesCopy
-        - NftMintBatch
       receiptHandlers:
         - handler: handleReceipt
